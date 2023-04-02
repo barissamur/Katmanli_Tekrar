@@ -1,0 +1,12 @@
+﻿@model YazarlarViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<ul>
+    @foreach (var item in Model.Yazarlar)
+    {
+        <li>@item.Ad</li>
+    }
+</ul>
